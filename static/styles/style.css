@@ -38,6 +38,9 @@ header {
 }
 
 .about-us {
+    border-width: 1px;
+    border-color: #83cbdd;
+    border-style: solid;
     background-color: #4a76b6;
     padding: 30px;
     border-radius: 10px;
@@ -61,6 +64,9 @@ header {
 }
 
 .services {
+    border-width: 1px;
+    border-color: #83cbdd;
+    border-style: solid;
     background-color: #4a76b6;
     padding: 30px;
     border-radius: 10px;
@@ -88,6 +94,9 @@ header {
 }
 
 .card {
+    border-width: 1px;
+    border-color: #83cbdd;
+    border-style: solid;
     background-color: #5d8bd0;
     padding: 20px;
     border-radius: 10px;
@@ -122,6 +131,9 @@ footer {
 }
 
 .contact {
+    border-width: 1px;
+    border-color: #83cbdd;
+    border-style: solid;
     background-color: #5d8bd0;
     color: white;
     padding: 20px 30px;
@@ -182,6 +194,69 @@ footer {
     }
 }
 
+/*Language Switcher*/
+
+.lang-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+}
+
+#lang-toggle {
+    background-color: #4a76b6;
+    color: white;
+    border: 2px solid #83cbdd;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#lang-toggle:hover {
+    background-color: #5d8bd0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#lang-menu {
+    list-style: none;
+    margin: 8px 0 0 0;
+    padding: 0;
+    background-color: #4a76b6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    animation: fadeIn 0.15s ease;
+}
+
+#lang-menu li {
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#lang-menu li:hover {
+    background-color: #5d8bd0;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media (min-width: 701px) {
 
